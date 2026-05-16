@@ -1,17 +1,65 @@
-# habit_tracker
+# Habit Tracker
 
-A new Flutter project.
+Habit Tracker is a Flutter application that performs CRUD (Create, Read, Update, Delete) operations using DummyJSON API, the latest Bloc state management solution for state management and the dio package for making network requests.
 
-## Getting Started
+## Student Info
 
-This project is a starting point for a Flutter application.
+| Name | Id | Section |
+|------|----|--------|
+| Tsion Bekalu | UGR/9277/16 | 1 |
 
-A few resources to get you started if this is your first Flutter project:
+## Screenshots of the working app
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+### Onboarding
+![Onboarding](assets/screenshots/onboarding.png)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Home Screen
+![Home Screen](assets/screenshots/home_page.png)
+
+### Create Habit
+![Create Habit](assets/screenshots/create_habit_page.png)
+
+### Habit Details
+![Details](assets/screenshots/habit_details_page.png)
+
+### Edit Habit
+![Edit Habit](assets/screenshots/edit_habit_page.png)
+
+### Delete Habit
+![Delete Habit](assets/screenshots/delete_habit_page.png)
+
+## Features
+
+- Create, read, update, and delete habits (CRUD)
+- Toggle habit completion
+- Habit streak tracking
+- Clean UI with smooth interactions
+- Loading and error states using Bloc
+- API integration using Dio
+
+## Project Structure
+
+```txt
+assets/
+├── screenshots/
+lib/
+│
+├── core/
+│   ├── navigation/
+│   ├── network/
+│   ├── theme/
+├── data/
+│   ├── models/
+│   ├── repositories/
+│
+├── domain/
+│   ├── entities/
+│   ├── repositories/
+│
+├── presentation/
+│   ├── blocs/
+│   ├── screens/
+│   ├── widgets/
+│
+└── main.dart
+
